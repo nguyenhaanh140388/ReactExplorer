@@ -1,27 +1,44 @@
 .App {
-  text-align: center;
+  width: auto;
+  height: auto;
+  background-color: #F2F4F4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
+  content: url("images/admin/front/chuyen-phap-luan.png");
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+
   }
 }
 
+.App-header h5 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #004615;
+  text-shadow: 0px 0px 5px #F2F3F4, 0px 0px 10px #F2F3F4, 0px 0px 10px #F2F3F4,
+    0px 0px 20px #21272e;
+}
+
 .App-header {
-  background-color: #ffffff;
-  min-height: 100vh;
+  /* background-color: #2C3E50; */
+  background-image: url("images/admin/front/banner.PNG");
+  /* min-height: 100vh; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 5px solid #229954;
 }
 
 .App-link {
@@ -42,14 +59,17 @@
   display: flex;
   align-items: flex-start;
   text-align: left;
-  color: #8E44AD;
+  color: #16A085;
+  width: 500px;
+  text-shadow: 5px 5px 5px #AAB7B8;
 
   &:after {
     content: '';
     flex-grow: 1;
-    height: 1px;
-    background: #8E44AD;
-    min-width: 450px;
+    height: 2px;
+    background: #16A085;
+    min-width: 20px;
+
     margin: auto;
   }
 
@@ -58,4 +78,30 @@
   }
 }
 
-img { width: 120px; height: 120px; }
+img {
+  width: 120px;
+  height: 120px;
+}
+
+.section {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.fancy {
+  border: 4px dashed pink;
+}
+
+.outer-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: table-cell;
+  width: 85%;
+  vertical-align: top;
+}

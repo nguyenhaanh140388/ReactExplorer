@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: auto;
+  padding: 5px;
+}
+.img-container:hover {
+ border: 2px solid #878787;
+}
+
+.clearfix {
+  height: 100px;
+  width: auto;
+  /* background-color:#CCC; */
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
