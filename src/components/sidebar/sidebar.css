@@ -1,0 +1,81 @@
+.sidebar {
+    display: table-cell;
+    width: 15%;
+    vertical-align: top;
+    background-color: #1D8348;
+}
+
+.sidebarclollapsed {
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+    background-color: #A569BD;
+}
+
+
+.sidebarlist {
+    height: auto;
+    padding: 0 0;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    align-items: center;
+    list-style-type: none;
+}
+
+.sidebarlist .item {
+    margin-right: 0;
+}
+
+.sidebarlist .child-item {
+    padding-left: 10px;
+}
+
+.sidebarlist .item a {
+    text-shadow: 10px 10px 10px #AAB7B8;
+    height: 40px;
+    width: 100%;
+    background-color: #229954;
+    border: 1px solid #27AE60;
+    list-style-type: none;
+    color: #EBEDEF;
+    display: block;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sidebarlist .item a .btn-collapse {
+    float: right;
+}
+
+.sidebarlist .item #icon {
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.sidebarlist .item a:hover {
+    height: 40px;
+    cursor: pointer;
+    color: #F8C471;
+    background-color: #D5F5E3;
+}
+
+.buttoncollapsable {
+    align-self: center;
+    align-self: flex-start;
+    justify-self: flex-end;
+    color: #B2BAC2;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-children-collapse {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

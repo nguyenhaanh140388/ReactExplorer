@@ -40,7 +40,8 @@ class ToggleButton extends React.Component {
                 {/* Pass value from parent to Clock component */}
                 <h1 className="liner">{this.props.name}</h1>
                 <h5 >{this.componentClock.name}</h5>
-                <div style={this.componentClock.theme} onClick={() => {
+                <div style={this.componentClock.theme} onClick={(e) => {
+                    e.preventDefault();
                     alert('You clicked on the toolbar!');
                 }}>
                     <Button onClick={this.clickEvent} isToggleOn={this.state.isToggleOn}>
